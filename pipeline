@@ -1,0 +1,20 @@
+pipeline
+{
+agent any
+triggers {
+  pollSCM '* * * * *'
+}
+stages{
+stage("QA"){
+steps{
+echo "This is qa Branch"
+}
+}
+  stage("stage2")
+  {
+    steps
+    {
+      echo "stage2"
+    }
+  }
+}
