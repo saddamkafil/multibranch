@@ -1,0 +1,13 @@
+pipeline
+{
+agent any
+triggers {
+  pollSCM '* * * * *'
+}
+stages{
+stage('print name'){
+steps{
+echo "This is master Branch"
+}
+}
+}
